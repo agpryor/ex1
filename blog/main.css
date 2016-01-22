@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px
+}
+
+body {
+background: white; font-family: verdana; 
+width:800px;
+margin:0px auto 0px auto;}
+
+h1, h2, h3 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+aside {
+	text-align:center;
+}
+
+aside p {
+	text-align:left;
+}
+
+
+
+img {
+}

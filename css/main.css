@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+*{margin:0px; padding:0px;}
+header {
+	width: 800px;
+	height: 250px;
+	margin: 24px auto 0px auto;
+	border: 1px solid grey;
+	margin-bottom: 50px;
+}
+
+h1 {
+	
+}
+
+li {
+	list-style-type:none;
+	padding: 5px;
+}
+li a {
+    text-decoration:none;
+	color:black;
+}
+
+li a:hover {
+	color: red;
+}
+
+section {
+    width:800px;
+    margin: auto;
+}
+section nav{
+    float:right;
+    width:200px;
+ 
+}
+
+footer{
+    text-align:center;
+    position:fixed;
+    bottom:0px;
+	left:auto;
+    clear:right;
+}
+
+footer a {
+	text-decoration: none;
+	text-align: center;
+}
+
+footer a:hover{
+	color: green;
+
+}
+

@@ -172,6 +172,10 @@ function leftTail()  {
 
 
 
+
+
+
+
 var d=20;
 
 function setup(){
@@ -179,6 +183,8 @@ function setup(){
 	//link to id mySketch from header
 	myCanvas.parent('mySketch');
 }
+
+
 
 function draw(){
 if (mouseIsPressed){

@@ -17,6 +17,7 @@ body {
 h2 {
 	margin-left: 550px;
     margin-right: auto;
+    position:relative;
 }
 
 li {

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+    
+    <html>
+  <head>
+      <meta charset="utf-8">
+        <title>Template</title>
+        
+        <!--css link-->
+        <link type="text/css" href="main.css" rel="stylesheet">
+        
+        
+        <!--js link-->
+        <!--jQuery first-->
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        
+        <!--custom js-->
+        <script type="text/javascript" src="template.js"></script>
+      
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+   
+      
+    <script>
+    
+    
+    var soundID = "C";
+    var soundID = "Cc";//sharp
+    var soundID = "D";
+    var soundID = "Dd";//sharp
+    var soundID = "E";
+    var soundID = "F";
+    var soundID = "Ff";//sharp
+    var soundID = "G";
+    var soundID = "Gg";//sharp
+    var soundID = "A";    
+    var soundID = "Aa";//sharp
+    var soundID = "B";
+
+      function loadSound () {
+        createjs.Sound.registerSound("sound/piano_middle_C.mp3", "C");
+        createjs.Sound.registerSound("sound/piano_C_sharp.mp3", "Cc"); 
+        createjs.Sound.registerSound("sound/piano_D.mp3", "D");
+          
+        /*
+        createjs.Sound.registerSound("sound/piano_D_sharp.mp3", "Dd");
+        createjs.Sound.registerSound("sound/piano_E.mp3", "E");
+        createjs.Sound.registerSound("sound/piano_F.mp3", "F");
+        createjs.Sound.registerSound("sound/piano_F_sharp.mp3", "Ff");
+        createjs.Sound.registerSound("sound/piano_G.mp3", "G");
+        createjs.Sound.registerSound("sound/piano_G_sharp.mp3", "Gg");
+        createjs.Sound.registerSound("sound/piano_A.mp3", "A");
+        createjs.Sound.registerSound("sound/piano_A_sharp.mp3", "Aa");
+        createjs.Sound.registerSound("sound/piano_B.mp3", "B");*/
+      }
+
+      function playSound () {
+          
+            createjs.Sound.play("C");
+            createjs.Sound.play("Cc");
+            createjs.Sound.play("D");
+          
+            /*
+            createjs.Sound.play("Dd");
+            createjs.Sound.play("E");
+            createjs.Sound.play("F");
+            createjs.Sound.play("Ff");
+            createjs.Sound.play("G");
+            createjs.Sound.play("Gg");
+            createjs.Sound.play("A");
+            createjs.Sound.play("Aa");
+            createjs.Sound.play("B");*/
+      }
+        
+    </script>
+    
+  </head>
+  <body onload="loadSound();">
+        <button onclick="playSound();" class="playSound" id="c">Note C</button>
+        <button onclick="playSound();" class="playSound" id="c_">Note C_</button>
+        <button onclick="playSound();" class="playSound" id="d">Note D</button>
+      
+        <!--
+        <button onclick="playSound();" class="playSound">Note D_</button>
+        <button onclick="playSound();" class="playSound">Note E</button>
+        <button onclick="playSound();" class="playSound">Note F</button>
+        <button onclick="playSound();" class="playSound">Note F_</button>
+        <button onclick="playSound();" class="playSound">Note G</button>
+        <button onclick="playSound();" class="playSound">Note G_</button>
+        <button onclick="playSound();" class="playSound">Note A</button>
+        <button onclick="playSound();" class="playSound">Note A_</button>
+        <button onclick="playSound();" class="playSound">Note B</button>-->
+      
+        
+        <!--
+        <button id="D">Note D</button>
+        <button id="D_">Note D_</button>
+        <button id="E">Note E</button>
+        <button id="F">Note F</button>
+        <button id="F_">Note F_</button>
+        <button id="G">Note G</button>
+        <button id="G_">Note G_</button>
+        <button id="A">Note A</button>
+        <button id="A_">Note A_</button>
+        <button id="B">Note B</button>-->
+      
+  </body>
+        
+         <section class="piano">
+            
+            <img onclick="playSound()" class="playSound" src="imgs/CNote.png" height="500" alt="notec" id="img1" />
+            <img onclick="playSound();" class="playSound" src="imgs/C_Note.png" height="377" alt="notec#" id="img2" />
+            <img onclick="playSound();" class="playSound" src="imgs/DNote.png" height="500" alt="noted" id="img3" />
+             
+            
+            <img src="imgs/D_Note.png" height="377" alt="noted#" id="img4" />
+            <img src="imgs/ENote.png" height="500" alt="notee" id="img5" />
+            <img src="imgs/FNote.png" height="500" alt="notef" id="img6" />
+            <img src="imgs/F_Note.png" height="377" alt="notef#" id="img7" />
+            <img src="imgs/GNote.png" height="500" alt="noteg" id="img8" />
+            <img src="imgs/G_Note.png" height="377" alt="noteg#" id="img9" />
+            <img src="imgs/ANote.png" height="500" alt="notea" id="img10" />
+            <img src="imgs/A_Note.png" height="377" alt="notea#" id="img11" />
+            <img src="imgs/BNote.png" height="500" alt="noteb" id="img12" />
+            
+        </section>
+        
+        
+        <footer>
+            <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        </footer>
+        
+        
+        
+</html>
